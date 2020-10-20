@@ -5,7 +5,7 @@ const {
 module.exports = {
   title: 'Laravel Themes Manager',
   description: description,
-
+  theme: 'titanium',
   head: [
     [
       "link",
@@ -55,8 +55,12 @@ module.exports = {
 
   themeConfig: {
     repo: 'hexadog/laravel-themes-manager',
+    repoLabel: 'Contribute!',
     docsRepo: 'hexadog/laravel-themes-manager-docs',
-    lastUpdated: true,
+    editLinks: true,
+    editLinkText: 'Help us improve this page!',
+    lastUpdated: 'Last Updated',
+    nextVersionTitle: 'develop',
     sidebar: [{
         title: "Package",
         collapsable: false,
@@ -91,7 +95,7 @@ module.exports = {
   },
 
   plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
+    'versioning',
+    '@vuepress/plugin-back-to-top'
   ]
 }
