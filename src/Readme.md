@@ -8,4 +8,5 @@ actionLink: /installation
 
 <div class="theme-default-content custom content__default"></div>
 
-<div class="footer">Made by <a href="https://hexadog.com" target="_blank">hexadog</a> with ❤️</div>
+<br />
+<center>Made by <a href="https://hexadog.com" target="_blank">hexadog</a> with ❤️</center>
