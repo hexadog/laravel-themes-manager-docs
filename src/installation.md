@@ -37,6 +37,6 @@ That's all the setup necessary. Next, let's look at how we can get working with 
 php artisan vendor:publish --provider="Hexadog\ThemesManager\Providers\PackageServiceProvider" --tag=views
 ```
 
-This will create a `vendor/menus-manager` directory in your application's `resources/views` directory with all views used by Themes manager.
+This will create a `vendor/themes-manager` directory in your application's `resources/views` directory with all views used by Themes manager.
 
 That's all the setup necessary. Next, let's look at how we can get working with <strong>Themes Manager</strong>.
