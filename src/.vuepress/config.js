@@ -8,37 +8,37 @@ module.exports = {
   theme: 'titanium',
   head: [
     [
-      "link",
+      'link',
       {
-        rel: "apple-touch-icon",
-        sizes: "180x180",
-        href: "/apple-touch-icon.png",
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/apple-touch-icon.png',
       },
     ],
     [
-      "link",
+      'link',
       {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        href: "/favicon-32x32.png",
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32.png',
       },
     ],
     [
-      "link",
+      'link',
       {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        href: "/favicon-16x16.png",
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicon-16x16.png',
       },
     ],
-    ["link", { rel: "manifest", href: "/manifest.json" }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
     [
-      "link",
-      { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#3a0839" },
+      'link',
+      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#3a0839' },
     ],
-    ["link", { rel: "shortcut icon", href: "/favicon.ico" }],
+    ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
     ['meta', {
       name: 'theme-color',
       content: '#ffffff'
@@ -62,33 +62,33 @@ module.exports = {
     lastUpdated: 'Last Updated',
     nextVersionTitle: 'develop',
     sidebar: [{
-        title: "Package",
+        title: 'Package',
         collapsable: false,
         children: [
-          ["/", "Introduction"],
-          ["/installation", "Installation"],
-          ["/how-it-works", "How it works"]
+          ['', 'Introduction'],
+          ['installation', 'Installation'],
+          ['how-it-works', 'How it works']
         ]
       },
       {
-        title: "Usage",
+        title: 'Usage',
         collapsable: false,
         children: [
-          ["/usage/basic", "Basic usage"],
-          ["/usage/middleware", "Middleware"],
-          ["/usage/assets", "Theme assets"],
-          ["/usage/components", "Blade components"],
-          ["/usage/error-views", "Error views"],
-          ["/usage/package-views", "Package views"]
+          ['usage/basic', 'Basic usage'],
+          ['usage/middleware', 'Middleware'],
+          ['usage/assets', 'Theme assets'],
+          ['usage/components', 'Blade components'],
+          ['usage/error-views', 'Error views'],
+          ['usage/package-views', 'Package views']
         ]
       },
       {
-        title: "Configuration",
+        title: 'Configuration',
         collapsable: false,
         children: [
-          ["/configuration/directory", "Themes directory"],
-          ["/configuration/assets", "Public assets path"],
-          ["/configuration/fallback-theme", "Fallback theme"]
+          ['configuration/directory', 'Themes directory'],
+          ['configuration/assets', 'Public assets path'],
+          ['configuration/fallback-theme', 'Fallback theme']
         ]
       }
     ]
