@@ -55,7 +55,6 @@ module.exports = {
 
   themeConfig: {
     repo: 'hexadog/laravel-themes-manager',
-    repoLabel: 'Contribute!',
     docsRepo: 'hexadog/laravel-themes-manager-docs',
     editLinks: true,
     editLinkText: 'Help us improve this page!',
@@ -65,30 +64,30 @@ module.exports = {
         title: 'Package',
         collapsable: false,
         children: [
-          ['', 'Introduction'],
-          ['installation', 'Installation'],
-          ['how-it-works', 'How it works']
+          '',
+          'installation',
+          'how-it-works'
         ]
       },
       {
         title: 'Usage',
         collapsable: false,
         children: [
-          ['usage/basic', 'Basic usage'],
-          ['usage/middleware', 'Middleware'],
-          ['usage/assets', 'Theme assets'],
-          ['usage/components', 'Blade components'],
-          ['usage/error-views', 'Error views'],
-          ['usage/package-views', 'Package views']
+          'usage/basic',
+          'usage/middleware',
+          'usage/assets',
+          'usage/components',
+          'usage/error-views',
+          'usage/package-views'
         ]
       },
       {
         title: 'Configuration',
         collapsable: false,
         children: [
-          ['configuration/directory', 'Themes directory'],
-          ['configuration/assets', 'Public assets path'],
-          ['configuration/fallback-theme', 'Fallback theme']
+          'configuration/directory',
+          'configuration/assets',
+          'configuration/fallback-theme'
         ]
       }
     ]
