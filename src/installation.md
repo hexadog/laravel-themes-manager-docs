@@ -39,5 +39,4 @@ php artisan vendor:publish --provider="Hexadog\ThemesManager\Providers\PackageSe
 
 This will create a `vendor/menus-manager` directory in your application's `resources/views` directory with all views used by Themes manager.
 
-<div class="theme-default-content custom content__default"></div>
-<div class="footer">That's all the setup necessary. Next, let's look at how we can get working with <strong>Themes Manager</strong>.</div>
+That's all the setup necessary. Next, let's look at how we can get working with <strong>Themes Manager</strong>.
