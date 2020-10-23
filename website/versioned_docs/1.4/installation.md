@@ -28,9 +28,6 @@ php artisan vendor:publish --provider="Hexadog\ThemesManager\Providers\PackageSe
 
 This will create a `themes-manager.php` file in your application's `config` directory.
 
-
-That's all the setup necessary. Next, let's look at how we can get working with **Themes Manager**.
-
 ### Publishing the views
 
 ```bash
