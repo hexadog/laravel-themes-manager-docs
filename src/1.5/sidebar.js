@@ -13,9 +13,8 @@ module.exports = [{
       "usage/basic",
       "usage/middleware",
       "usage/assets",
+      "usage/views",
       "usage/components",
-      "usage/error-views",
-      "usage/package-views",
       "usage/artisan"
     ]
   },
