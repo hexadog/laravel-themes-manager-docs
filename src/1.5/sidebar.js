@@ -2,7 +2,6 @@ module.exports = [{
     "title": "Package",
     "collapsable": false,
     "children": [
-      "",
       "installation",
       "how-it-works"
     ]
