@@ -59,7 +59,6 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Help us improve this page!',
     lastUpdated: 'Last Updated',
-    nextVersionTitle: 'develop',
     versions: {
       latest: versioning.versions.latest,
       selected: versioning.versions.latest,
