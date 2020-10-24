@@ -1,3 +1,4 @@
+const versioning = require('./lib/versioning.js')
 const {
   description
 } = require('../../package')
@@ -5,7 +6,6 @@ const {
 module.exports = {
   title: 'Laravel Themes Manager',
   description: description,
-  theme: 'titanium',
   head: [
     [
       'link',
@@ -60,7 +60,16 @@ module.exports = {
     editLinkText: 'Help us improve this page!',
     lastUpdated: 'Last Updated',
     nextVersionTitle: 'develop',
+    versions: {
+      latest: versioning.versions.latest,
+      selected: versioning.versions.latest,
+      all: versioning.versions.all
+    },
     nav: [
+      {
+          text: 'Versions',
+          items: versioning.linksFor('installation.md')
+      },
       {
         text: 'Our packages',
         ariaLabel: 'Our packages',
@@ -70,43 +79,15 @@ module.exports = {
         ]
       }
     ],
-    sidebar: [{
-        title: 'Package',
-        collapsable: false,
-        children: [
-          '',
-          'installation',
-          'how-it-works'
-        ]
-      },
-      {
-        title: 'Usage',
-        collapsable: false,
-        children: [
-          'usage/basic',
-          'usage/middleware',
-          'usage/assets',
-          'usage/components',
-          'usage/error-views',
-          'usage/package-views',
-          'usage/artisan'
-        ]
-      },
-      {
-        title: 'Configuration',
-        collapsable: false,
-        children: [
-          'configuration/directory',
-          'configuration/assets',
-          'configuration/fallback-theme',
-          'configuration/cache'
-        ]
-      }
-    ]
+    sidebar: versioning.sidebars
   },
 
   plugins: [
-    'versioning',
-    '@vuepress/plugin-back-to-top'
+    '@vuepress/plugin-back-to-top',
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10,
+      // Only search the latest version, e.g. 4.3, otherwise many duplicates will show up
+      test: `/${versioning.versions.latest.replace('.', '\\.')}/`
+    }]
   ]
 }

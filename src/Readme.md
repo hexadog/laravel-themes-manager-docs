@@ -3,7 +3,7 @@ home: true
 heroImage: logo.png
 tagline: Bring multi themes support to your Laravel application with a full-featured Themes Manager
 actionText: Quick Start →
-actionLink: /installation
+actionLink: /latest
 ---
 
 <div class="theme-default-content custom content__default"></div>
