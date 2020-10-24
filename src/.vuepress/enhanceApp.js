@@ -12,6 +12,16 @@ export default ({
         }
     ])
 
+    router.beforeEach((to, from, next) => {
+        const version = to.path.split('/')[1]
+
+        if (version === 'latest') {
+            next(to.path.replace('/latest/', `/${siteData.themeConfig.versions.latest}/`))
+        }
+
+        next()
+    })
+
     // Select docs version based on url path
     // Example: "/2.6/guides/installation.html" will use "2.6"
     router.afterEach((to, from) => {
