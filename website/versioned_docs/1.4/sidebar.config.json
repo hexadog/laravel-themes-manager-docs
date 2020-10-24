@@ -5,15 +5,15 @@
       "collapsable": false,
       "children": [
         [
-          "/",
+          "",
           "Introduction"
         ],
         [
-          "/installation",
+          "installation",
           "Installation"
         ],
         [
-          "/how-it-works",
+          "how-it-works",
           "How it works"
         ]
       ]
@@ -23,27 +23,27 @@
       "collapsable": false,
       "children": [
         [
-          "/usage/basic",
+          "usage/basic",
           "Basic usage"
         ],
         [
-          "/usage/middleware",
+          "usage/middleware",
           "Middleware"
         ],
         [
-          "/usage/assets",
+          "usage/assets",
           "Theme assets"
         ],
         [
-          "/usage/components",
+          "usage/components",
           "Blade components"
         ],
         [
-          "/usage/error-views",
+          "usage/error-views",
           "Error views"
         ],
         [
-          "/usage/package-views",
+          "usage/package-views",
           "Package views"
         ]
       ]
@@ -53,15 +53,15 @@
       "collapsable": false,
       "children": [
         [
-          "/configuration/directory",
+          "configuration/directory",
           "Themes directory"
         ],
         [
-          "/configuration/assets",
+          "configuration/assets",
           "Public assets path"
         ],
         [
-          "/configuration/fallback-theme",
+          "configuration/fallback-theme",
           "Fallback theme"
         ]
       ]
