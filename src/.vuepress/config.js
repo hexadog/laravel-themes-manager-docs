@@ -88,7 +88,8 @@ module.exports = {
           'usage/assets',
           'usage/components',
           'usage/error-views',
-          'usage/package-views'
+          'usage/package-views',
+          'usage/artisan'
         ]
       },
       {
@@ -97,7 +98,8 @@ module.exports = {
         children: [
           'configuration/directory',
           'configuration/assets',
-          'configuration/fallback-theme'
+          'configuration/fallback-theme',
+          'configuration/cache'
         ]
       }
     ]
