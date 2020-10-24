@@ -52,20 +52,34 @@ List all existing themes in your application with their details.
 ```shell
 php artisan theme:list
 
-+-----------+---------+---------+------------------------------------+-----------+---------+--------+
-| Name      | Vendor  | Version | Description                        |  Extends  | Default | Active |
-+-----------+---------+---------+------------------------------------+-----------+---------+--------+
-| theme-one | hexadog |   1.0   | Default Hexadog CMS frontend theme |           |    X    | Yes    |
-| theme-two | hexadog |   1.0   | Default Hexadog CMS frontend theme | theme-one |         | Yes    |
-+-----------+---------+---------+------------------------------------+-----------+---------+--------+
++-----------+---------+---------+------------------------+-----------+---------+--------+
+| Name      | Vendor  | Version | Description            |  Extends  | Default | Active |
++-----------+---------+---------+------------------------+-----------+---------+--------+
+| theme-one | hexadog |   1.0   | Default frontend theme |           |    X    | Yes    |
+| theme-two | hexadog |   1.0   | New frontend theme     | theme-one |         | Yes    |
++-----------+---------+---------+------------------------+-----------+---------+--------+
 ```
 
 ## Activate Theme
+Only active themes can be used at runtime.
 ```shell
 php artisan theme:activate hexadog/default
 ```
 
 ## Deactivate Theme
+Deactivated theme to make it unavailable for usage.
 ```shell
 php artisan theme:deactivate hexadog/default
+```
+
+## Clear cache
+Manually clear cache
+```bash
+php artisan theme:cache
+```
+
+## Cache generation
+Generate cache
+```bash
+php artisan theme:cache:clear
 ```
