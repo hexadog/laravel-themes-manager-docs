@@ -6,7 +6,6 @@ const {
 module.exports = {
   title: 'Laravel Themes Manager',
   description: description,
-  theme: 'titanium',
   head: [
     [
       'link',
