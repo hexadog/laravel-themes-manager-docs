@@ -4,7 +4,7 @@
 
 const versions = require('../versions.json')
 const fse = require('fs-extra')
-const path = process.cwd()
+const path = process.cwd() + '/src'
 
 module.exports = {
   versions: {
