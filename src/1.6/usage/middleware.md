@@ -15,7 +15,7 @@ use Hexadog\ThemesManager\Http\Middleware\ThemeLoader as HexadogThemeLoader;
 
 class ThemeLoader extends HexadogThemeLoader
 {
-    public function handle($request, Closure $next)
+    public function handle($request, Closure $next, $theme = null)
     {
         // Check if request url starts with admin prefix
         if ($request-segment(1) === 'admin') {
