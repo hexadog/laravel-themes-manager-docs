@@ -7,25 +7,25 @@ You can easily create a new Theme by using the following command and follow the 
 php artisan theme:make
 
  Theme Name:
- > 
+ >
 
  Vendor name:
- > 
+ >
 
  Author name:
- >  
+ >
 
  Description:
- > 
+ >
 
  Version:
- > 
+ >
 
  Is it a child theme? (yes/no) [no]:
  > y
 
  Parent theme name:
- > 
+ >
 ```
 
 This command will create a new Theme directory with all necessary files within the `themes` folder.
@@ -60,26 +60,14 @@ php artisan theme:list
 +-----------+---------+---------+------------------------+-----------+---------+--------+
 ```
 
-## Activate Theme
-Only active themes can be used at runtime.
-```shell
-php artisan theme:activate hexadog/default
-```
-
-## Deactivate Theme
-Deactivated theme to make it unavailable for usage.
-```shell
-php artisan theme:deactivate hexadog/default
-```
-
 ## Clear cache
 Manually clear cache
 ```bash
-php artisan theme:cache
+php artisan theme:cache:clear
 ```
 
 ## Cache generation
 Generate cache
 ```bash
-php artisan theme:cache:clear
+php artisan theme:cache
 ```
